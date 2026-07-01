@@ -1,0 +1,20 @@
+{
+  "name": "orangehrm-playwright-suite",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript automation suite for OrangeHRM",
+  "scripts": {
+    "test":          "playwright test",
+    "test:tc014":    "playwright test TC_014",
+    "test:headed":   "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox":  "playwright test --project=firefox",
+    "test:webkit":   "playwright test --project=webkit",
+    "test:ci":       "playwright test --reporter=list,junit",
+    "report":        "playwright show-report ../playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "typescript":       "^5.4.5",
+    "dotenv":           "^16.4.5"
+  }
+}
