@@ -1,0 +1,23 @@
+{
+  "name": "orangehrm-playwright-automation",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright automation suite for OrangeHRM – Authentication and PIM module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:auth": "playwright test tests/authentication.spec.ts",
+    "test:pim-nav": "playwright test tests/pim-navigation.spec.ts",
+    "test:pim-add": "playwright test tests/pim-add-employee.spec.ts",
+    "test:pim-search": "playwright test tests/pim-employee-search.spec.ts",
+    "test:security": "playwright test tests/session-security.spec.ts",
+    "test:report": "playwright show-report",
+    "test:ci": "playwright test --reporter=github"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.7",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.5"
+  }
+}
