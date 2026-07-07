@@ -1,0 +1,42 @@
+{
+  "TC_004": {
+    "firstName": "John",
+    "middleName": "Edward",
+    "lastName": "Smith",
+    "employeeId": "EMP-AUTO-001"
+  },
+  "TC_005": {
+    "firstName": "",
+    "middleName": "",
+    "lastName": "",
+    "employeeId": "",
+    "expectedValidationMessageFirstName": "Required",
+    "expectedValidationMessageLastName": "Required"
+  },
+  "TC_006": {
+    "firstName": "Alice",
+    "middleName": "",
+    "lastName": "Johnson",
+    "employeeId": "EMP-AUTO-002"
+  },
+  "TC_007": {
+    "searchFirstName": "John",
+    "searchLastName": "Smith",
+    "expectedResult": "John Smith",
+    "expectedEmployeeId": "EMP-AUTO-001"
+  },
+  "TC_008": {
+    "expectedFirstName": "John",
+    "expectedLastName": "Smith",
+    "expectedEmployeeId": "EMP-AUTO-001",
+    "searchEmployeeName": "John Smith"
+  },
+  "TC_009": {
+    "firstName": "A",
+    "middleName": "",
+    "lastName": "Smithsonianxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "firstNameLength": 1,
+    "lastNameLength": 50,
+    "employeeId": "EMP-AUTO-003"
+  }
+}
