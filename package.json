@@ -1,0 +1,26 @@
+{
+  "name": "orangehrm-playwright-automation",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright automation framework for OrangeHRM - Authentication module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:logout": "playwright test tests/logout.spec.ts",
+    "test:session": "playwright test tests/session.spec.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {}
+}
